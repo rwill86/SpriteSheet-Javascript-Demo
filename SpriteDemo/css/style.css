@@ -1,0 +1,537 @@
+html, body{
+     margin: 0px; 
+     padding: 0px;	
+     height: 100%;
+     width: 100%;
+	 color: #000000;
+	 font-size: 12px;
+     font-family: Geneva, sans-serif;
+     background: #F8F8F8;
+}
+
+canvas{
+     width: 100%;
+     height: 256px;
+	 border-radius: 0px;
+	 overflow: hidden;
+}
+
+@media screen and (min-width: 0px) and (max-width: 980px){
+     .zeta-wrap{
+         width: 100%; 
+         position: relative;
+         margin: 0 auto;
+	     padding: 0px;
+	     padding-top: 70px;
+     }	
+	 
+	 .zeta-wrapMiddle{
+		 display: block;
+         width: 98%; 
+         position: relative;
+         margin: 0 auto;
+	     padding: 0px;
+	     padding-top: 10px;
+		 overflow: hidden;
+     }
+	 
+	 .zeta-wrapGame{
+	     width: 98%;
+	     display: block;
+	     position: relative;
+         margin: 0 auto;
+         padding: 0px;
+     }
+}
+
+@media screen and (min-width: 980px){ 
+     .zeta-wrap{ 
+	     display: block;
+         width: 100%; 
+         position: relative;
+         margin: 0 auto;
+	     padding: 0px;
+	     padding-top: 70px;
+		 overflow: hidden;
+     }
+	 
+	 .zeta-wrapMiddle{
+		 display: block;
+         width: 70%; 
+         position: relative;
+         margin: 0 auto;
+	     padding: 0px;
+	     padding-top: 10px;
+		 overflow: hidden;
+     }
+	 
+	 .zeta-wrapGame{
+	     width: 30%;
+	     display: block;
+	     position: relative;
+         margin: 0 auto;
+         padding: 0px;
+     }
+}
+
+.zeta-text{
+	 font-size: 16px;
+	 margin: 0 auto;
+	 word-wrap: break-word;
+     position: relative;
+	 padding: 10px 0px;
+}
+
+.zeta-wrapOutter{
+     position: relative;
+	 margin: 0 auto;
+	 padding: 0px;
+	 left: 0;
+     right: 0;
+}
+
+.zeta-wrapScreen{
+	 display: block;
+	 margin: 0 auto;
+	 padding: 0px;
+	 color: #F5F5F5;
+	 background: #0B0B0B;
+	 position: relative;
+	 overflow: hidden;
+	 border: 1px solid #181818;
+	 border-radius: 5px;
+}
+
+.zeta-wrapScreenInner{
+	 width: 80%;
+	 display: block;
+	 margin: 0 auto;
+	 padding: 0;
+	 color: #F5F5F5;
+	 background: #0B0B0B;
+	 position: relative;
+	 overflow: hidden;
+	 border-radius: 0px;
+}
+
+.zeta-wrapScreenTop{
+	padding: 20px;
+}
+
+.zeta-wrapScreenBottom{
+	padding: 15px;
+}
+
+.zeta-mainColour{
+	 display: block;
+	 margin: 0 auto;
+	 padding: 30px;
+	 position: relative;
+	 background: #ed0919;
+	 border: none;
+	 overflow: hidden;
+	 border-radius: 10px;
+}
+
+.zeta-wrapPanelInner{
+	 overflow: hidden;
+	 border-radius: 5px;
+	 display: block;
+	 position: relative;
+     margin: 0 auto;
+     padding: 0px;
+	 margin-top: 0px;
+}
+
+.zeta-wrapControlMiddle{
+	 display: block;
+	 position: relative;
+     margin: 0 auto;
+     padding: 0px; 
+}
+
+.zeta-wrapLogoMiddle{
+     width: 50%;
+	 display: block;
+	 position: relative;
+     margin: 0 auto;
+     padding: 0px;
+}
+
+.zeta-inputText{
+	 width: 100%;
+	 display: block;
+	 position: relative;
+	 margin: 0 auto;
+	 padding: 2px;
+	 color: #b3244d;
+     border: none;
+}
+
+.zeta-gameLogo{
+     width: 50%;
+	 display: block;
+	 position: relative;
+	 margin: 0 auto;
+	 padding: 2px;
+	 color: #6d0725;
+	 border-radius: 5px;
+     border: none;
+}
+
+.zeta-wrapButton{
+     display: block;
+	 position: relative;
+     margin: 0 auto;
+     padding: 10px; 
+	 overflow: hidden;
+	 border-radius: 10px;
+}
+
+.zeta-wrapButtonInner{
+     display: block;
+	 position: relative;
+     margin: 0 auto;
+     padding: 5px; 
+	 overflow: hidden;
+	 border: none;
+	 border-radius: 5px;
+}
+
+.zeta-wrapHalf{
+	 width: 50%;
+	 float: left;
+	 display: block;
+	 position: relative;
+     margin: 0 auto;
+     padding: 0px;
+     overflow: hidden;	
+}
+
+.zeta-wrapControlTop{
+	 display: block;
+	 position: relative;
+     margin: 0 auto;
+     padding: 0px;	
+	 overflow: hidden;
+}
+
+.zeta-wrapControlBottom{
+	 display: block;
+	 position: relative;
+     margin: 0 auto;
+     padding: 0px;
+     overflow: hidden;	 
+}
+
+.zeta-controlCir{
+     float: left;
+	 display: block;
+	 margin: 0 auto;
+	 padding: 0px;
+	 position: relative;
+	 border-radius: 5px;
+	 border: none;
+	 overflow: hidden;
+}
+
+.zeta-wrapControl{
+	 display: block;
+	 margin: 0 auto;
+	 padding: 5;
+	 width: 100px;
+	 height: 100px; 
+	 position: relative;
+	 border-radius: 0px;
+	 border: none;
+	 overflow: hidden;
+}
+
+.zeta-arrowThumbnail{
+	 display: block;
+     margin: 0 auto;
+	 float: left;
+	 width: 33.33%;
+	 height: 33.33%;
+	 padding: 0px;
+	 position: relative;
+	 color: #000000;
+	 border: none;
+}
+
+.zeta-arrowControlThumnail{
+	 display: block;
+     margin: 0 auto;
+	 float: left;
+	 width: 20%;
+	 padding: 0px;
+	 position: relative;
+	 color: #000000;
+	 border: none;
+}
+
+.zeta-upArrow{
+     display: block;
+	 margin: 0 auto;
+	 padding: 0px;
+	 color: #F5F5F5;
+	 background: #0B0B0B;
+	 position: relative;
+	 overflow: hidden;
+	 cursor: pointer;
+	 height: 100%;
+	 width: 100%;
+	 border-radius: 5px 5px 0px 0px;
+}
+
+.zeta-leftArrow{
+     display: block;
+	 margin: 0 auto;
+	 padding: 0px;
+	 color: #F5F5F5;
+	 background: #0B0B0B;
+	 position: relative;
+	 overflow: hidden;
+	 cursor: pointer;
+	 height: 100%;
+	 width: 100%;
+	 border-radius: 5px 0px 0px 5px;
+}
+
+.zeta-middleArrow{
+     display: block;
+	 margin: 0 auto;
+	 padding: 0px;
+	 color: #F5F5F5;
+	 background: #0B0B0B;
+	 position: relative;
+	 overflow: hidden;
+	 cursor: pointer;
+	 height: 100%;
+	 width: 100%;
+	 border-radius: 0px;
+}
+
+.zeta-rightArrow{
+     display: block;
+	 margin: 0 auto;
+	 padding: 0px;
+	 color: #F5F5F5;
+	 background: #0B0B0B;
+	 position: relative;
+	 overflow: hidden;
+	 cursor: pointer;
+	 height: 100%;
+	 width: 100%;
+	 border-radius: 0px;
+	 border-radius: 0px 5px 5px 0px;
+}
+
+.zeta-downArrow{
+     display: block;
+	 margin: 0 auto;
+	 padding: 0px;
+	 color: #F5F5F5;
+	 background: #0B0B0B;
+	 position: relative;
+	 overflow: hidden;
+	 cursor: pointer;
+	 height: 100%;
+	 width: 100%;
+	 border-radius: 0px 0px 5px 5px;
+}
+
+.zeta-middleArrowCir{
+	 display: block;
+	 margin: 0 auto;
+	 padding: 0px;
+	 position: relative;
+	 border-radius: 0px;
+	 background: #0B0B0B;
+	 height: 100%;
+	 width: 100%;
+	 border: 0px solid #181818;
+	 overflow: hidden;
+}
+
+.zeta-controlCirB{
+	 float: right;
+	 display: block;
+	 margin: 0 auto;
+	 padding: 0px;
+	 cursor: pointer;
+	 width: 50px;
+	 height: 50px; 
+	 position: relative;
+	 border-radius: 5px;
+	 background: #0B0B0B;
+	 border: 2px solid #0B0B0B;
+	 overflow: hidden;
+}
+
+.zeta-controlCirButtonPaddingA{
+	 display: block;
+	 position: relative;
+     margin: 0 auto;
+     padding: 0px;
+	 margin-top: 0px;
+} 
+
+.zeta-controlCirButtonPaddingB{
+	 display: block;
+	 position: relative;
+     margin: 0 auto;
+     padding: 0px;
+	 margin-top: 0px;
+}
+
+.zeta-controlCirButtonA, .zeta-controlCirButtonB{
+     float: right;
+	 display: block;
+	 margin: 0 auto;
+	 padding: 0px;
+	 position: relative;
+	 border-radius: 5px;
+	 background: #0B0B0B;
+	 border: none;
+	 overflow: hidden;
+}
+
+.zeta-controlCirA{
+	 float: right;
+	 display: block;
+	 margin: 0 auto;
+	 padding: 0px;
+	 cursor: pointer;
+	 width: 50px;
+	 height: 50px; 
+	 position: relative;
+	 border-radius: 5px;
+	 background: #0B0B0B;
+	 border: 2px solid #0B0B0B;
+	 overflow: hidden;
+}
+
+.zeta-controlIconMiddle{
+  	 color: #0B0B0B;
+     margin: 0 auto;
+     position: absolute;
+     top: 10%;
+	 right: 25%;
+	 font-size: 30px;
+}
+
+.zeta-controlSelectButton{
+	 float: left;
+	 width: 20px;
+	 display: block;
+	 margin: 0 auto;
+	 padding: 5px;
+	 cursor: pointer;
+	 text-align: center;
+	 position: relative;
+	 background: #0B0B0B;
+     border: 1px solid #0B0B0B;
+	 border-radius: 5px;
+}
+
+.zeta-controlStartButton{
+	 float: left;
+	 width: 20px;
+	 display: block;
+	 margin: 0 auto;
+	 padding: 5px;
+	 cursor: pointer;
+	 text-align: center;
+	 position: relative;
+	 background: #0B0B0B;
+     border: 1px solid #0B0B0B;
+	 border-radius: 5px;
+}
+
+.zeta-controlAudio{
+	 float: right;
+	 display: block;
+	 margin: 0 auto;
+	 padding: 0px;
+	 width: 110px;
+	 height: 110px; 
+	 position: relative;
+	 border-radius: 15px;
+	 border: none;
+	 overflow: hidden;
+}
+
+.zeta-wrapAudio{
+     display: block;
+	 position: relative;
+     margin: 0 auto;
+     padding: 0px;	
+}
+
+.zeta-audioRow-one, .zeta-audioRow-two, .zeta-audioRow-three{
+     display: block;
+	 position: relative;
+     margin: 0 auto;
+     padding: 0px;	
+}
+
+.zeta-audioThumnail{
+	 display: block;
+     margin: 0 auto;
+	 float: left;
+	 width: 12.5%;
+	 padding: 0px;
+	 position: relative;
+	 color: #000000;
+	 border: none;
+}
+
+.zeta-dotEmpty{
+     display: block;
+	 margin:  1px;
+	 padding: 5px;
+	 position: relative;
+	 border-radius: 2px;
+	 border: none;
+	 overflow: hidden;
+}
+
+.zeta-dot{	 
+	 display: block;
+	 margin: 1px;
+	 padding: 5px;
+	 position: relative;
+	 border-radius: 2px;
+	 background: #0B0B0B;
+	 border: 0px solid #0B0B0B;
+	 overflow: hidden;
+}
+
+.zeta-audioDot{
+	 display: block;
+	 margin:  1px;
+	 padding: 5px;
+	 position: relative;
+	 border-radius: 2px;
+	 background: #0B0B0B;
+	 border: 0px solid #0B0B0B;
+	 overflow: hidden;
+}
+
+.zeta-right{
+	 float: right;
+}
+
+.zeta-left{
+	 float: left;
+}
+
+.zeta-center{
+	 text-align: center;
+}
+
+.zeta-bold{
+	font-weight: bold;
+	text-transform: uppercase;
+}

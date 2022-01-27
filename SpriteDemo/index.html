@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<!-- HTML -->
+<html id="zeta" lang="en">
+<!-- Head -->
+<head> 
+     <!-- Meta -->
+     <meta charset="UTF-8">
+	 <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+	 <meta name="description" content="This shows of how to use a Spritesheet in html & javascript to make a retro 8 bit game.">
+     <meta name="keywords" content="video games, indie, fun">
+	 <!-- Title -->
+	 <title>Sprite Demo</title>	
+	 <!-- Icon -->
+	 <link rel="icon" type="favicon/x-icon" href="logo/minilogo.ico"/>
+	 <!-- StyleSheet -->
+     <link rel="stylesheet" id="styleSheet" href="css/style.css">
+	 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	 <!-- Java Script -->
+	 <script src="javascript/jquery-3.1.1.min.js" type="text/javascript"></script>
+	 <script src="javascript/screen.js" type="text/javascript"></script>
+</head>
+<!-- Body -->
+<body>
+     <!-- Wrap outter -->
+     <div class="zeta-wrapOutter" id="1">
+         <!-- Wrap -->
+         <div class="zeta-wrap" id="1">
+			 <!-- Wrap Game -->
+			 <div class="zeta-wrapGame" id="1">
+			     <!-- Main Colour -->
+			     <div class="zeta-mainColour" id="1">
+				     <!-- Header Top -->
+			         <div class="zeta-headerTop" id="1">
+					     <!-- Input Text -->
+			             <div class="zeta-inputText" id="1">
+						 </div>
+					 </div>
+				 <!-- Wrap Screen -->
+			     <div class="zeta-wrapScreen" id="1">
+				     <!-- Wrap Screen Top-->
+			         <div class="zeta-wrapScreenTop" id="1">
+				     </div>
+			    	 <div class="zeta-wrapScreenInner" id="1"> 
+					     <canvas id="gameCanvas" class="gameOne"></canvas> 
+						 <img src="image/Icons.png" id="sheet" alt="photo" style="display:none;"/>	
+
+					 </div>
+					 <!-- Header -->
+			         <div class="zeta-headerBottom" id="1">
+					     <!-- Text -->
+			             <div class="zeta-text zeta-center zeta-bold" id="1"><span class="zeta-grey"></span> <span class="zeta-red">Gameboy</span><span class="zeta-purple"></span><span class="zeta-green"></span><span class="zeta-yellow"></span><span class="zeta-blue"></span>
+				         </div>	
+				     </div>	
+			     </div>
+				 <!-- Wrap Screen Bottom -->
+			     <div class="zeta-wrapScreenBottom" id="1">
+				 </div>
+					 <!-- Wrap Control Top -->
+			         <div class="zeta-wrapControlTop" id="1">
+					    <div class="zeta-wrapHalf" id="1">
+					         <div class="zeta-controlCir" id="1">
+							     <div class="zeta-wrapControl" id="1">
+							     <div class="zeta-arrowThumbnail" id="1">
+								 </div>
+								 <div class="zeta-arrowThumbnail" id="1">
+								     <div class="zeta-upArrow" id="1">
+									     <div class="zeta-triLeft" id="1">
+										 </div>
+									 </div>
+								 </div>
+								 <div class="zeta-arrowThumbnail" id="1">
+								 </div>
+								 <div class="zeta-arrowThumbnail" id="1">
+								     <div class="zeta-leftArrow" id="1">
+									     <div class="zeta-wrapRec" id="1">
+									     <div class="zeta-recThumnail" id="1">
+										     <div class="zeta-ret" id="1">
+											 </div>
+											 <div class="zeta-ret" id="1">
+											 </div>
+									     </div>
+										 </div>
+									 </div>
+								 </div>
+								 <div class="zeta-arrowThumbnail" id="1">
+								     <div class="zeta-middleArrow" id="1">
+									     <div class="zeta-middleArrowCir" id="1">
+										 </div>
+									 </div>
+								 </div>
+								 <div class="zeta-arrowThumbnail" id="1">
+								     <div class="zeta-rightArrow" id="1">
+									     <div class="zeta-arrowThumbnail" id="1">
+								         </div>
+									 </div>
+								 </div>
+								 <div class="zeta-arrowThumbnail" id="1">
+								 </div>
+								 <div class="zeta-arrowThumbnail" id="1">
+								     <div class="zeta-downArrow" id="1">
+									 </div>
+								 </div>
+								 <div class="zeta-arrowThumbnail" id="1">
+								 </div>
+								 </div>
+					     	 </div>
+						 </div>
+						 <div class="zeta-wrapHalf" id="1">
+						     <div class="zeta-wrapPanelInner" id="1">
+                                 <div class="zeta-wrapHalf" id="1">							 
+							     <div class="zeta-controlCirButtonPaddingA" id="1">
+							     <div class="zeta-controlCirButtonA" id="1">
+						         <div class="zeta-controlCirA" id="1">
+								     <div class="zeta-controlIconMiddle zeta-bold" id="1">B
+									 </div>
+						         </div>
+								 </div>
+								 </div>
+								 </div>
+								 <div class="zeta-wrapHalf" id="1">
+								 <div class="zeta-controlCirButtonPaddingB" id="1">
+							     <div class="zeta-controlCirButtonB" id="1">
+						         <div class="zeta-controlCirB" id="1">
+								     <div class="zeta-controlIconMiddle zeta-bold" id="1">A
+									 </div>
+						         </div>
+								 </div>
+								 </div>
+								 </div>
+                             </div>							 
+                         </div>						 
+					 </div>
+					 <!-- Header Middle -->
+			         <div class="zeta-headerMiddle" id="1">
+					     <div class="zeta-wrapControlMiddle" id="1">
+						 </div>
+					 </div>
+					 <!-- Wrap Control Bottom -->
+			         <div class="zeta-wrapControlBottom" id="1" style="margin-bottom: 40px;">
+					     <div class="zeta-wrapControlMiddle" id="1">
+						    <div class="zeta-wrapHalf" id="1">
+						     <div class="zeta-wrapButton zeta-right" id="1">
+							     <div class="zeta-wrapButtonInner" id="1">
+						             <div class="zeta-controlSelectButton" id="1">
+						             </div>
+                                 </div>								 
+							 </div>
+							 </div>
+							 <div class="zeta-wrapHalf" id="1">
+							 <div class="zeta-wrapButton zeta-left" id="1">
+							     <div class="zeta-wrapButtonInner" id="1">
+						             <div class="zeta-controlStartButton" id="1">
+						             </div>
+								 </div>
+                             </div>	
+                             </div>							 
+						 </div>
+					 </div>
+					 <!-- Wrap Control Bottom -->
+			         <div class="zeta-wrapControlBottom" id="1">
+						 <div class="zeta-controlAudio" id="1">
+						     <div class="zeta-wrapAudio" id="1">						 
+							 <div class="zeta-audioRow-one" id="1">
+							     <div class="zeta-audioThumnail" id="1">									 
+								     <div class="zeta-dotEmpty" id="1">
+									 </div>							 
+								 </div>
+								 <div class="zeta-audioThumnail" id="1">							 
+								     <div class="zeta-audioDot" id="1">
+									 </div>	
+								 </div>
+								 <div class="zeta-audioThumnail" id="1">
+								     <div class="zeta-dot" id="1">
+									 </div>		
+								 </div>
+								 <div class="zeta-audioThumnail" id="1">
+								     <div class="zeta-audioDot" id="1">
+									 </div>
+								 </div>   
+								 <div class="zeta-audioThumnail" id="1">
+								     <div class="zeta-dot" id="1">
+									 </div>
+								 </div>
+								 <div class="zeta-audioThumnail" id="1">
+								     <div class="zeta-audioDot" id="1">
+									 </div>
+								 </div>
+								 <div class="zeta-audioThumnail" id="1">
+								     <div class="zeta-dot" id="1">
+									 </div>
+								 </div>   
+								 <div class="zeta-audioThumnail" id="1">
+								     <div class="zeta-dotEmpty" id="1">
+									 </div>
+								 </div>
+						     </div>
+							 <div class="zeta-audioRow-two" id="1">
+							 	 <div class="zeta-audioThumnail" id="1">
+								     <div class="zeta-audioDot" id="1">
+									 </div>
+								 </div>
+							     <div class="zeta-audioThumnail" id="1">
+								     <div class="zeta-dot" id="1">
+									 </div>
+								 </div>
+								 <div class="zeta-audioThumnail" id="1">
+								     <div class="zeta-audioDot" id="1">
+									 </div>
+								 </div>
+								 <div class="zeta-audioThumnail" id="1">
+								     <div class="zeta-dot" id="1">
+									 </div>
+								 </div>
+								 <div class="zeta-audioThumnail" id="1">
+								     <div class="zeta-audioDot" id="1">
+									 </div>
+								 </div>   
+								 <div class="zeta-audioThumnail" id="1">
+								     <div class="zeta-dot" id="1">
+									 </div>
+								 </div>
+								 <div class="zeta-audioThumnail" id="1">
+								     <div class="zeta-audioDot" id="1">
+									 </div>
+								 </div>
+								 <div class="zeta-audioThumnail" id="1">
+								     <div class="zeta-dot" id="1">
+									 </div>
+								 </div>   
+						     </div>
+						     <div class="zeta-audioRow-three" id="1">
+							     <div class="zeta-audioThumnail" id="1">
+								     <div class="zeta-dot" id="1">
+									 </div>
+								 </div>
+								 <div class="zeta-audioThumnail" id="1">
+								     <div class="zeta-audioDot" id="1">
+									 </div>
+								 </div>
+								 <div class="zeta-audioThumnail" id="1">
+								     <div class="zeta-dot" id="1">
+									 </div>
+								 </div>
+								 <div class="zeta-audioThumnail" id="1">
+								     <div class="zeta-audioDot" id="1">
+									 </div>
+								 </div>   
+								 <div class="zeta-audioThumnail" id="1">
+								     <div class="zeta-dot" id="1">
+									 </div>
+								 </div>
+								 <div class="zeta-audioThumnail" id="1">
+								     <div class="zeta-audioDot" id="1">
+									 </div>
+								 </div>
+								 <div class="zeta-audioThumnail" id="1">
+								     <div class="zeta-dot" id="1">
+									 </div>
+								 </div>   
+								 <div class="zeta-audioThumnail" id="1">
+								     <div class="zeta-audioDot" id="1">
+									 </div>
+								 </div>		 
+						     </div>
+								 <div class="zeta-audioRow-two" id="1">
+							 	 <div class="zeta-audioThumnail" id="1">
+								     <div class="zeta-audioDot" id="1">
+									 </div>
+								 </div>
+							     <div class="zeta-audioThumnail" id="1">
+								     <div class="zeta-dot" id="1">
+									 </div>
+								 </div>
+								 <div class="zeta-audioThumnail" id="1">
+								     <div class="zeta-audioDot" id="1">
+									 </div>
+								 </div>
+								 <div class="zeta-audioThumnail" id="1">
+								     <div class="zeta-dot" id="1">
+									 </div>
+								 </div>
+								 <div class="zeta-audioThumnail" id="1">
+								     <div class="zeta-audioDot" id="1">
+									 </div>
+								 </div>   
+								 <div class="zeta-audioThumnail" id="1">
+								     <div class="zeta-dot" id="1">
+									 </div>
+								 </div>
+								 <div class="zeta-audioThumnail" id="1">
+								     <div class="zeta-audioDot" id="1">
+									 </div>
+								 </div>
+								 <div class="zeta-audioThumnail" id="1">
+								     <div class="zeta-dot" id="1">
+									 </div>
+								 </div>   
+						     </div>
+						     <div class="zeta-audioRow-three" id="1">
+							     <div class="zeta-audioThumnail" id="1">
+								     <div class="zeta-dot" id="1">
+									 </div>
+								 </div>
+								 <div class="zeta-audioThumnail" id="1">
+								     <div class="zeta-audioDot" id="1">
+									 </div>
+								 </div>
+								 <div class="zeta-audioThumnail" id="1">
+								     <div class="zeta-dot" id="1">
+									 </div>
+								 </div>
+								 <div class="zeta-audioThumnail" id="1">
+								     <div class="zeta-audioDot" id="1">
+									 </div>
+								 </div>   
+								 <div class="zeta-audioThumnail" id="1">
+								     <div class="zeta-dot" id="1">
+									 </div>
+								 </div>
+								 <div class="zeta-audioThumnail" id="1">
+								     <div class="zeta-audioDot" id="1">
+									 </div>
+								 </div>
+								 <div class="zeta-audioThumnail" id="1">
+								     <div class="zeta-dot" id="1">
+									 </div>
+								 </div>   
+								 <div class="zeta-audioThumnail" id="1">
+								     <div class="zeta-audioDot" id="1">
+									 </div>
+								 </div>		 
+						     </div>
+							 <div class="zeta-audioRow-two" id="1">
+							 	 <div class="zeta-audioThumnail" id="1">
+								     <div class="zeta-audioDot" id="1">
+									 </div>
+								 </div>
+							     <div class="zeta-audioThumnail" id="1">
+								     <div class="zeta-dot" id="1">
+									 </div>
+								 </div>
+								 <div class="zeta-audioThumnail" id="1">
+								     <div class="zeta-audioDot" id="1">
+									 </div>
+								 </div>
+								 <div class="zeta-audioThumnail" id="1">
+								     <div class="zeta-dot" id="1">
+									 </div>
+								 </div>
+								 <div class="zeta-audioThumnail" id="1">
+								     <div class="zeta-audioDot" id="1">
+									 </div>
+								 </div>   
+								 <div class="zeta-audioThumnail" id="1">
+								     <div class="zeta-dot" id="1">
+									 </div>
+								 </div>
+								 <div class="zeta-audioThumnail" id="1">
+								     <div class="zeta-audioDot" id="1">
+									 </div>
+								 </div>
+								 <div class="zeta-audioThumnail" id="1">
+								     <div class="zeta-dot" id="1">
+									 </div>
+								 </div>   
+						     </div>
+						     <div class="zeta-audioRow-three" id="1">
+							     <div class="zeta-audioThumnail" id="1">
+								     <div class="zeta-dot" id="1">
+									 </div>
+								 </div>
+								 <div class="zeta-audioThumnail" id="1">
+								     <div class="zeta-audioDot" id="1">
+									 </div>
+								 </div>
+								 <div class="zeta-audioThumnail" id="1">
+								     <div class="zeta-dot" id="1">
+									 </div>
+								 </div>
+								 <div class="zeta-audioThumnail" id="1">
+								     <div class="zeta-audioDot" id="1">
+									 </div>
+								 </div>   
+								 <div class="zeta-audioThumnail" id="1">
+								     <div class="zeta-dot" id="1">
+									 </div>
+								 </div>
+								 <div class="zeta-audioThumnail" id="1">
+								     <div class="zeta-audioDot" id="1">
+									 </div>
+								 </div>
+								 <div class="zeta-audioThumnail" id="1">
+								     <div class="zeta-dot" id="1">
+									 </div>
+								 </div>   
+								 <div class="zeta-audioThumnail" id="1">
+								     <div class="zeta-audioDot" id="1">
+									 </div>
+								 </div>		 
+						     </div>
+							 <div class="zeta-audioRow-one" id="1">
+							     <div class="zeta-audioThumnail" id="1">									 
+								     <div class="zeta-dotEmpty" id="1">
+									 </div>							 
+								 </div>
+								 <div class="zeta-audioThumnail" id="1">
+								     <div class="zeta-dot" id="1">
+									 </div>		
+								 </div>
+								 <div class="zeta-audioThumnail" id="1">
+								     <div class="zeta-audioDot" id="1">
+									 </div>
+								 </div>   
+								 <div class="zeta-audioThumnail" id="1">
+								     <div class="zeta-dot" id="1">
+									 </div>
+								 </div>
+								 <div class="zeta-audioThumnail" id="1">
+								     <div class="zeta-audioDot" id="1">
+									 </div>
+								 </div>
+								 <div class="zeta-audioThumnail" id="1">							 
+								     <div class="zeta-dot" id="1">
+									 </div>	
+								 </div>
+								 <div class="zeta-audioThumnail" id="1">
+								     <div class="zeta-audioDot" id="1">
+									 </div>
+								 </div>
+                                 <div class="zeta-audioThumnail" id="1">									 
+								     <div class="zeta-dotEmpty" id="1">
+									 </div>							 
+								 </div>								 
+						     </div>	 
+							 </div>
+						 </div>
+					 </div>				 
+				 </div>			 
+			 </div>							 
+         </div>
+	 </div>
+</body>
+
+</html>
